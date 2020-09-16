@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+#gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#gallery li:not(:last-child) {
+  margin-right: 20px;
+}
+
+#gallery img {
+  width: 300px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid black;
+}
+/*# sourceMappingURL=main.css.map */

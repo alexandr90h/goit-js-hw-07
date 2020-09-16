@@ -1,3 +1,7 @@
-const itemElem = document.querySelectorAll(".item");
-console.log(`В списке ${itemElem.length} категории.`);
-console.log(itemElem);
+const itemElem = document.querySelectorAll('.item');
+console.log(`В списку ${itemElem.length} категорії.`);
+
+itemElem.forEach(num => {
+  console.log(`Категорія: ${num.querySelector('h2').textContent}`);
+  console.log(`Кількість елементів: ${num.querySelectorAll('li').length}`);
+});
