@@ -1,8 +1,27 @@
+#ingredients,
+#categories {
+  text-align: left;
+}
+
+#ingredients h2,
+#categories h2 {
+  color: black;
+}
+
 #gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
+  padding: 0;
+}
+
+#gallery li {
+  margin: 0;
+  padding: 0;
 }
 
 #gallery li:not(:last-child) {
@@ -10,30 +29,18 @@
 }
 
 #gallery img {
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 2px solid black;
 }
 
-#counter {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  margin: 20px;
-  border: 2px solid tomato;
-}
-
 #counter span {
-  margin-left: 5px;
-  margin-right: 5px;
   font-weight: 700;
 }
 
 #validation-input {
-  display: block;
-  margin: 20px auto;
   border: 3px solid #bdbdbd;
 }
 
@@ -43,5 +50,36 @@
 
 #validation-input.invalid {
   border-color: #f44336;
+}
+
+#boxes {
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.task-box {
+  border: 2px solid #513eff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  margin: 20px;
+  text-align: center;
+}
+
+.task-box h2 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: #f44336;
 }
 /*# sourceMappingURL=main.css.map */
