@@ -2,10 +2,10 @@ const inputValidElem = document.querySelector('#validation-input');
 
 const borderColorValid = function () {
   if (inputValidElem.value.length === 6) {
-    inputValidElem.classList.remove('invalid');
-    inputValidElem.classList.add('valid');
+    inputValidElem.classList.replace('invalid', 'valid');
+  } else if (inputValidElem.value.length === 0) {
+    inputValidElem.classList.replace('valid', 'invalid');
   } else {
-    inputValidElem.classList.remove('valid');
     inputValidElem.classList.add('invalid');
   }
 };
